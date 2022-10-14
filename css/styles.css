@@ -132,6 +132,8 @@ summary {
   display: list-item;
 }
 
+/* KONIEC NORMALIZATORA */
+
 :root {
   --alternative-color: #757575;
   --highlight-color: #2196f3;
@@ -146,8 +148,17 @@ summary {
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
+  margin: 0;
+  padding: 0;
+  width: 1600px;
 }
-
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
 .button {
   cursor: pointer;
   font-family: inherit;
@@ -181,6 +192,10 @@ body {
 }
 .list {
   list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 .navigation {
   font-size: 14px;
@@ -197,6 +212,7 @@ body {
 }
 .dark-background {
   background-color: var(--backgroundmain-color);
+  display: block;
 }
 
 .address-footer {
@@ -225,6 +241,10 @@ body {
   font-size: 16px;
   line-height: 1.875;
   box-shadow: 0px 4px 4px 0px #00000026;
+  border-radius: 4px;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
 }
 
 .hidden {
@@ -238,14 +258,17 @@ body {
   color: var(--alternative-color);
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 10px;
 }
 .index-header2 {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 .team-div {
   background-color: var(--backgroundalt-color);
+  padding: 94px 0;
 }
 .member {
   background-color: var(--light-color);
@@ -259,12 +282,15 @@ body {
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .member-pos {
   color: var(--alternative-color);
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .button-category {
@@ -293,4 +319,23 @@ body {
   border: 1px solid var(--borderline-color);
   height: 404px;
   width: 370px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 215px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline {
+  padding: 200px 0;
+}
+.index-element {
+  margin-top: 94px;
 }

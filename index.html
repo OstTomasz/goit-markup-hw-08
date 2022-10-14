@@ -14,9 +14,9 @@
     <title>Studio</title>
   </head>
   <body>
-    <header>
+    <header class="container">
       <a class="logo link" href="./index.html"
-        ><span class="blue">Web</span><span class="black">Studio</span></a
+        type="button"><span class="blue">Web</span><span class="black">Studio</span></a
       >
       <nav class="navigation">
         <ul class="list">
@@ -37,11 +37,15 @@
       </div>
     </header>
     <main>
-      <section class="dark-background">
-        <h1 class="index-h1">EFEKTYWNE ROZWIĄZANIA DLA&nbsp;WASZEGO BIZNESU</h1>
+      <section class="dark-background headline">
+        <div class="container column">
+        <h1 class="index-h1">
+          EFEKTYWNE ROZWIĄZANIA 
+          <br/>DLA WASZEGO BIZNESU
+        </h1>
         <button class="button button-order" type="button">Zamów usługę</button>
-      </section>
-      <div>
+      </div></section>
+      <div class="container index-element">
         <h2 class="hidden">Nasze atuty</h2>
         <ul class="list">
           <li>
@@ -74,7 +78,7 @@
           </li>
         </ul>
       </div>
-      <section>
+      <section class="container column index-element">
         <h2 class="index-header2">Czym się zajmujemy</h2>
         <ul class="list">
           <li>
@@ -103,56 +107,59 @@
           </li>
         </ul>
       </section>
-      <section class="team-div">
-        <h2 class="index-header2">Nasz zespół</h2>
-        <ul class="list">
-          <li class="member">
-            <img
-              src="./images/team1.jpg"
-              alt="Zdjęcie przedstawiające John Doe"
-              width="270"
-              height="260"
-            />
-            <h3 class="member-name">John Doe</h3>
-            <p class="member-pos">Product Designer</p>
-          </li>
-          <li class="member">
-            <img
-              src="./images/team2.jpg"
-              alt="Zdjęcie przedstawiające John Doe"
-              width="270"
-              height="260"
-            />
+      <section class="team-div index-element">
+        <div class="container column">
+          <h2 class="index-header2">Nasz zespół</h2>
+          <ul class="list">
+            <li class="member">
+              <img
+                src="./images/team1.jpg"
+                alt="Zdjęcie przedstawiające John Doe"
+                width="270"
+                height="260"
+              />
+              <h3 class="member-name">John Doe</h3>
+              <p class="member-pos">Product Designer</p>
+            </li>
+            <li class="member">
+              <img
+                src="./images/team2.jpg"
+                alt="Zdjęcie przedstawiające John Doe"
+                width="270"
+                height="260"
+              />
 
-            <h3 class="member-name">John Doe</h3>
-            <p class="member-pos">Frontend Developer</p>
-          </li>
-          <li class="member">
-            <img
-              src="./images/team3.jpg"
-              alt="Zdjęcie przedstawiające John Doe"
-              width="270"
-              height="260"
-            />
-            <h3 class="member-name">John Doe</h3>
-            <p class="member-pos">Marketing</p>
-          </li>
-          <li class="member">
-            <img
-              src="./images/team4.jpg"
-              alt="Zdjęcie przedstawiające John Doe"
-              width="270"
-              height="260"
-            />
-            <h3 class="member-name">John Doe</h3>
-            <p class="member-pos">UI Designer</p>
-          </li>
-        </ul>
+              <h3 class="member-name">John Doe</h3>
+              <p class="member-pos">Frontend Developer</p>
+            </li>
+            <li class="member">
+              <img
+                src="./images/team3.jpg"
+                alt="Zdjęcie przedstawiające John Doe"
+                width="270"
+                height="260"
+              />
+              <h3 class="member-name">John Doe</h3>
+              <p class="member-pos">Marketing</p>
+            </li>
+            <li class="member">
+              <img
+                src="./images/team4.jpg"
+                alt="Zdjęcie przedstawiające John Doe"
+                width="270"
+                height="260"
+              />
+              <h3 class="member-name">John Doe</h3>
+              <p class="member-pos">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="dark-background">
+      <div class="container">
       <a class="logo link" href="./index.html"
-        ><span class="blue">Web</span><span class="white">Studio</span></a
+         type="button"><span class="blue">Web</span><span class="white">Studio</span></a
       >
       <address class="address-footer">
         <p>m. Warszawa, Aleje Jerozolimskie 21</p>
@@ -164,5 +171,6 @@
         </ul>
       </address>
     </footer>
+    </div>
   </body>
 </html>
