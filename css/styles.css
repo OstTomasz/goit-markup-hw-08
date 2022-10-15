@@ -250,6 +250,26 @@ ul {
 .address-footer .link:hover {
   color: var(--highlight-color);
 }
+.footer-wrapper {
+  padding: 60px 0;
+}
+.address-footer ul {
+  flex-direction: column;
+  gap: 0;
+}
+.address-footer li:last-child {
+  margin-bottom: 0;
+}
+.af-element {
+  margin: 4.5px 0;
+}
+address.address-footer p {
+  margin-top: 0;
+}
+.footer .logo {
+  margin-bottom: 20px;
+}
+
 .index-h1 {
   color: var(--light-color);
   font-size: 44px;
@@ -360,4 +380,8 @@ ul {
 }
 .section {
   padding: 94px 0;
+}
+
+.footer {
+  align-items: flex-start;
 }
