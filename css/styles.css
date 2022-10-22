@@ -230,7 +230,16 @@ ul {
   line-height: 1.17;
   color: var(--alternative-color);
 }
-
+.mail::before {
+  content: url(../images/icons/envelope.svg);
+  width: 16px;
+  height: 12px;
+}
+.telephone::before {
+  content: url(../images/icons/smartphone.svg);
+  width: 16px;
+  height: 12px;
+}
 .dark-background {
   background-color: var(--backgroundmain-color);
   display: block;
