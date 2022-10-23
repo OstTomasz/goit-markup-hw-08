@@ -143,7 +143,8 @@ summary {
   --light-color: #ffffff;
   --lightalpha-color: #ffffff60;
   --borderline-color: #eeeeee;
-  --backgroung-light-color: #f5f4fa;
+  --background-light-color: #f5f4fa;
+  --alternative-borderline-color: #afb1b8;
 }
 
 body {
@@ -346,7 +347,6 @@ address.address-footer p {
   box-shadow: 0px 2px 1px 0px #00000033;
   box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001f;
-  padding-bottom: 30px;
 }
 .member-name {
   font-weight: 500;
@@ -441,8 +441,29 @@ address.address-footer p {
 }
 
 .strenghts-svg {
-  background-color: var(--backgroung-light-color);
+  background-color: var(--background-light-color);
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+  padding: 25px 100px;
+}
+.social-svg {
+  width: 44px;
+  height: 44px;
+}
+.social-media {
+  margin: 16px 32px 18px;
+}
+.social {
+  gap: 10px;
+}
+.client {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--alternative-borderline-color);
+  border-radius: 4px;
+}
+
+.clients {
+  margin: 0 auto;
 }
