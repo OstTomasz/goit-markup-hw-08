@@ -143,6 +143,7 @@ summary {
   --light-color: #ffffff;
   --lightalpha-color: #ffffff60;
   --borderline-color: #eeeeee;
+  --backgroung-light-color: #f5f4fa;
 }
 
 body {
@@ -234,11 +235,29 @@ ul {
   content: url(../images/icons/envelope.svg);
   width: 16px;
   height: 12px;
+  margin-right: 10px;
+  vertical-align: -10%;
+  color: var(--alternative-color);
+  --color2: var(--alternative-color);
+  --color1: var(--alternative-color);
 }
 .telephone::before {
   content: url(../images/icons/smartphone.svg);
   width: 16px;
   height: 12px;
+  margin-right: 10px;
+  vertical-align: -10%;
+  color: var(--alternative-color);
+  --color2: var(--alternative-color);
+  --color1: var(--alternative-color);
+}
+.mail:focus::before,
+.mail::before:hover,
+.telephone::before:focus,
+.telephone::before:hover {
+  color: var(--highlight-color);
+  --color2: var(--highlight-color);
+  --color1: var(--highlight-color);
 }
 .dark-background {
   background-color: var(--backgroundmain-color);
@@ -401,6 +420,10 @@ address.address-footer p {
 
 .headline {
   padding: 200px 0;
+  background-image: url(../images/headline-background.jpg),
+    url(../images/headline-background-shadow.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .section {
   padding: 94px 0;
@@ -415,4 +438,11 @@ address.address-footer p {
 .portfolio-main {
   margin-top: 97px;
   margin-bottom: 91px;
+}
+
+.strenghts-svg {
+  background-color: var(--backgroung-light-color);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
 }
