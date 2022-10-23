@@ -420,8 +420,8 @@ address.address-footer p {
 
 .headline {
   padding: 200px 0;
-  background-image: url(../images/headline-background.jpg),
-    url(../images/headline-background-shadow.png);
+  background-image: linear-gradient(#2f303a66, #2f303a66),
+    url(../images/headline-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
