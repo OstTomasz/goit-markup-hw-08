@@ -439,6 +439,7 @@ address.address-footer p {
   border: none;
   border-radius: 50%;
 }
+
 .social-svg-background:focus,
 .social-svg-background:hover {
   cursor: pointer;
@@ -454,10 +455,13 @@ address.address-footer p {
   justify-content: space-around;
 }
 .client {
-  width: 170px;
-  height: 92px;
   border: 1px solid var(--alternative-borderline-color);
   border-radius: 4px;
+  padding: 18px 32px 14px;
+}
+.client-svg {
+  width: 106px;
+  height: 60px;
 }
 .client:hover {
   cursor: pointer;
