@@ -463,7 +463,8 @@ address.address-footer p {
   width: 106px;
   height: 60px;
 }
-.client:hover {
+.client:hover,
+.client:focus {
   cursor: pointer;
   border: 1px solid var(--highlight-color);
   --color2: var(--highlight-color);
