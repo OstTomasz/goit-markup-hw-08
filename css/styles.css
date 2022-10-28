@@ -177,10 +177,13 @@ ul {
 .link {
   text-decoration: none;
   color: inherit;
+  fill: var(--alternative-color);
+  transition: color 500ms, fill 500ms;
 }
 .link:hover,
 .link:focus {
   color: var(--highlight-color);
+  fill: var(--highlight-color);
 }
 
 .blue {
@@ -346,11 +349,7 @@ address.address-footer p {
   border-style: hidden;
   border-radius: 4px;
   padding: 6px 22px;
-}
-.category-buttons {
-  gap: 8px;
-  padding-bottom: 16px;
-  margin-bottom: 34px;
+  transition: background-color 500ms, color 300ms, box-shadow 500ms;
 }
 .button-category:focus,
 .button-category:hover {
@@ -358,6 +357,11 @@ address.address-footer p {
   color: var(--light-color);
   box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
     0px 3px 1px 0px #0000001a;
+}
+.category-buttons {
+  gap: 8px;
+  padding-bottom: 16px;
+  margin-bottom: 34px;
 }
 
 .project {
@@ -377,6 +381,7 @@ address.address-footer p {
 .project-item {
   border: 1px solid var(--borderline-color);
   width: 372px;
+  transition: box-shadow 500ms;
 }
 .project-item:hover,
 .project-item:focus {
@@ -426,25 +431,21 @@ address.address-footer p {
   padding: 25px 100px;
 }
 .social-svg {
-  height: 20px;
-  width: 20px;
-}
-
-.social-svg-background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
   height: 44px;
-  border: none;
+  width: 44px;
+  fill: var(--alternative-borderline-color);
+  padding: 12px;
   border-radius: 50%;
+  overflow: visible;
+  transition: fill 500ms cubic-bezier(1, 0, 0, 1),
+    background-color 500ms cubic-bezier(1, 0, 0, 1);
 }
 
-.social-svg-background:focus,
-.social-svg-background:hover {
-  cursor: pointer;
+.social-svg:hover,
+.social-svg:focus {
+  fill: var(--light-color);
   background-color: Var(--highlight-color);
-  --color1: var(--light-color);
+  cursor: pointer;
 }
 .social-media {
   display: flex;
@@ -454,22 +455,24 @@ address.address-footer p {
   gap: 10px;
   justify-content: space-around;
 }
-.client {
+
+.client-svg {
   border: 1px solid var(--alternative-borderline-color);
   border-radius: 4px;
+  width: 170px;
+  height: 92px;
   padding: 18px 32px 14px;
+  fill: var(--alternative-borderline-color);
+  transition: border-color 500ms cubic-bezier(1, 0, 0, 1),
+    fill 500ms cubic-bezier(1, 0, 0, 1);
 }
-.client-svg {
-  width: 106px;
-  height: 60px;
-}
-.client:hover,
-.client:focus {
+.client-svg:hover,
+.client-svg:focus {
   cursor: pointer;
   border: 1px solid var(--highlight-color);
-  --color2: var(--highlight-color);
-  --color3: var(--highlight-color);
+  fill: var(--highlight-color);
 }
+
 .clients {
   margin: 0 auto;
 }
@@ -509,20 +512,20 @@ address.address-footer p {
 .join-us .social-media {
   margin: 0;
 }
-.social-svg-background-footer {
+.social-svg-footer {
   background-color: var(--icon-on-dark-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
   height: 44px;
-  border: none;
+  width: 44px;
+  fill: var(--light-color);
+  padding: 12px;
   border-radius: 50%;
+  overflow: visible;
+  transition: background-color 500ms cubic-bezier(1, 0, 0, 1);
 }
-.social-svg-background-footer:focus,
-.social-svg-background-footer:hover {
+
+.social-svg-footer:hover,
+.social-svg-footer:focus {
   background-color: Var(--highlight-color);
-  --color1: var(--light-color);
   cursor: pointer;
 }
 .footer-wrapper {
