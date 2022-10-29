@@ -561,3 +561,14 @@ address.address-footer p {
 .atut {
   height: 294px;
 }
+
+.nav-active::after {
+  content: "";
+  position: absolute;
+  left: -5%;
+  bottom: -33px;
+  width: 110%;
+  height: 4px;
+  background-color: var(--highlight-color);
+  border-radius: 2px;
+}
