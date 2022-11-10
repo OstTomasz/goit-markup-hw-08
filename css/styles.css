@@ -668,3 +668,12 @@ address.address-footer p {
   height: 11px;
   width: 11px;
 }
+.contact-form-element {
+  display: flex;
+}
+.contact-form-element-content {
+}
+.contact-form .modal-svg {
+  height: 20px;
+  width: 20px;
+}
