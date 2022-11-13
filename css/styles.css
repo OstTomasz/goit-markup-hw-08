@@ -673,10 +673,14 @@ address.address-footer p {
   display: flex;
   flex-direction: column;
 }
+.contact-form-header {
+  font-size: 20px;
+  line-height: 1.17;
+}
 .contact-form-element {
   display: flex;
   position: relative;
-  margin-top: 28px;
+  margin: 28px 0 0;
   border: 1px solid #21212133;
   border-radius: 4px;
   align-items: center;
@@ -699,12 +703,6 @@ address.address-footer p {
   border: 0;
   outline: 0;
 }
-.contact-form button {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  bottom: -100px;
-}
 .contact-form-comment {
   resize: none;
   height: 120px;
@@ -723,6 +721,7 @@ address.address-footer p {
   align-items: center;
 }
 .privacy-policy p {
+  color: var(--alternative-color);
   margin: 0 0 0 24px;
   font-size: 14px;
   line-height: 1.71;
@@ -755,4 +754,12 @@ address.address-footer p {
 }
 .privacy-policy:has(input:checked) .legal-svg-check {
   display: block;
+}
+.privacy-policy a {
+  color: var(--highlight-color);
+}
+.contact-form button {
+  margin-top: 20px;
+  margin-left: 124px;
+  padding: 0;
 }
