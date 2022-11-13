@@ -245,7 +245,11 @@ ul {
   background-color: var(--backgroundmain-color);
   display: block;
 }
-
+.footer-subheader {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
 .address-footer {
   font-style: normal;
   font-size: 14px;
@@ -775,8 +779,13 @@ address.address-footer p {
 }
 .newsletter-form {
   display: flex;
+  margin-left: 78px;
+  position: relative;
 }
 .button-newsletter {
+  position: absolute;
+  right: -212px;
+  top: 40px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -792,6 +801,7 @@ address.address-footer p {
   height: 50px;
   padding: 0;
   fill: var(--light-color);
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -802,6 +812,7 @@ address.address-footer p {
   box-shadow: inset 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
     0px 3px 1px 0px #0000001a;
   fill: var(--dark-color);
+  cursor: pointer;
 }
 .button-newsletter-text {
   font-size: 16px;
@@ -812,4 +823,43 @@ address.address-footer p {
 .newsletter-svg {
   height: 24px;
   width: 24px;
+}
+.newsletter {
+  display: flex;
+  position: relative;
+  top: 12px;
+  margin: 28px 0 0;
+  border: 1px solid #ffffff4d;
+  border-radius: 4px;
+  align-items: center;
+  padding: 0;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.newsletter:has(input:focus) {
+  border-color: var(--highlight-color);
+}
+.newsletter-label {
+  position: absolute;
+  top: -30px;
+  color: var(--light-color);
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.newsletter-input {
+  background: none;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 358px;
+  padding: 15px 16px;
+  color: #ffffff99;
+}
+.newsletter-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: #ffffff99;
 }
