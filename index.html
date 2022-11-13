@@ -392,48 +392,67 @@
         <h2>Zostaw swoje dane w formularzu poniżej</h2>
         <form class="contact-form">
           <fieldset class="contact-form-element">
-            <label class="contact-form-element-content" for="user-name"
+            <label class="contact-form-element-label" for="user-name"
               >Imię
             </label>
             <svg class="modal-svg">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
-            <input type="text" name="user-name" id="user-name" />
+            <input
+              class="contact-form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+            />
           </fieldset>
           <fieldset class="contact-form-element">
-            <label class="contact-form-element-content" for="user-telephone">
+            <label class="contact-form-element-label" for="user-telephone">
               Telefon
             </label>
             <svg class="modal-svg">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
-            <input type="tel" name="user-telephone" id="user-telephone" />
+            <input
+              class="contact-form-input"
+              type="tel"
+              name="user-telephone"
+              id="user-telephone"
+            />
           </fieldset>
           <fieldset class="contact-form-element">
-            <label class="contact-form-element-content" for="user-mail"
+            <label class="contact-form-element-label" for="user-mail"
               >Email
             </label>
             <svg class="modal-svg">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
-            <input type="mail" name="user-mail" id="user-mail" />
+            <input
+              class="contact-form-input"
+              type="mail"
+              name="user-mail"
+              id="user-mail"
+            />
           </fieldset>
           <fieldset class="contact-form-element">
-            <label class="contact-form-element-content" for="user-comment"
+            <label class="contact-form-element-label" for="user-comment"
               >Komentarz
             </label>
             <textarea
+              class="contact-form-input contact-form-comment"
               id="user-comment"
               name="user-comment"
               placeholder="Wprowadź tekst"
             ></textarea>
           </fieldset>
-          <input type="checkbox" name="privacy-policy" value="" required />
-          <p>
-            Oświadczam iż akceptuję <a href="#">Regulamin</a> i
-            <a href="#">Politykę Prywatności</a>.
-          </p>
-          <button type="submit">Wyślij</button>
+          <div class="privacy-policy">
+            <span class="privacy-policy-checkmark"></span>
+            <input type="checkbox" name="privacy-policy" value="" required />
+            <p>
+              Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+              <a href="#">Politykę Prywatności</a>.
+            </p>
+          </div>
+          <button class="button button-order" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
