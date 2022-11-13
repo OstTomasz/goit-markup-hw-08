@@ -729,16 +729,30 @@ address.address-footer p {
 }
 .privacy-policy input {
   position: absolute;
-  cursor: pointer;
-  width: 0;
-  height: 0;
+  width: 16px;
+  height: 15px;
   opacity: 0;
 }
-.privacy-policy-checkmark {
+
+.legal-svg-uncheck {
+  cursor: pointer;
   position: absolute;
-  left: 0;
-  background-color: red;
-  border:
-  height: 15px;
+  left: -4px;
+  top: 4px;
+  height: 23px;
+  width: 23px;
+}
+.legal-svg-check {
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  height: 17px;
   width: 16px;
+  display: none;
+}
+.privacy-policy:has(input:checked) .legal-svg-uncheck {
+  display: none;
+}
+.privacy-policy:has(input:checked) .legal-svg-check {
+  display: block;
 }

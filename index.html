@@ -444,14 +444,19 @@
               placeholder="Wprowadź tekst"
             ></textarea>
           </fieldset>
-          <div class="privacy-policy">
-            <span class="privacy-policy-checkmark"></span>
-            <input type="checkbox" name="privacy-policy" value="" required />
+          <label class="privacy-policy">
+            <input type="checkbox" name="privacy-policy" required />
+            <svg class="legal-svg-uncheck">
+              <use href="./images/icons.svg#icon-checkbox"></use>
+            </svg>
+            <svg class="legal-svg-check">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
             <p>
               Oświadczam iż akceptuję <a href="#">Regulamin</a> i
               <a href="#">Politykę Prywatności</a>.
             </p>
-          </div>
+          </label>
           <button class="button button-order" type="submit">Wyślij</button>
         </form>
       </div>
