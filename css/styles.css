@@ -302,7 +302,7 @@ address.address-footer p {
 
 .button-order:hover,
 .button-order:focus {
-  color: #000000;
+  color: var(--dark-color);
   box-shadow: inset 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
     0px 3px 1px 0px #0000001a;
 }
@@ -772,4 +772,44 @@ address.address-footer p {
   margin-top: 20px;
   margin-left: 124px;
   padding: 0;
+}
+.newsletter-form {
+  display: flex;
+}
+.button-newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--highlight-color);
+  color: var(--light-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  border-style: hidden;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  fill: var(--light-color);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-newsletter:hover,
+.button-newsletter:focus {
+  color: var(--dark-color);
+  box-shadow: inset 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+    0px 3px 1px 0px #0000001a;
+  fill: var(--dark-color);
+}
+.button-newsletter-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+}
+.newsletter-svg {
+  height: 24px;
+  width: 24px;
 }
