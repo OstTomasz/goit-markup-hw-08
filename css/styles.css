@@ -197,7 +197,7 @@ ul {
   color: var(--light-color);
 }
 
-.black {
+.logo__secondary-color {
   color: var(--dark-color);
 }
 .list {
