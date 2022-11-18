@@ -190,7 +190,7 @@ ul {
   fill: var(--highlight-color);
 }
 
-.blue {
+.active-color {
   color: var(--highlight-color);
 }
 .white {
@@ -210,8 +210,6 @@ ul {
 .header-wrapper {
   border-bottom: 1px solid #ececec;
   padding: 25px 0;
-}
-.header {
   justify-content: space-between;
 }
 .navigation {
@@ -222,19 +220,19 @@ ul {
   flex-grow: 1;
   margin-left: 93px;
 }
-.navigation ul.list {
+.navigation .list {
   gap: 0;
 }
-.navigation li {
+.navigation .list__item {
   margin: 0 23px;
 }
-.navigation li:first-child {
+.navigation .list__item:first-child {
   margin-left: 0;
 }
-.navigation li:last-child {
+.navigation .list__item:last-child {
   margin-right: 0;
 }
-.address-header {
+.contacts-list {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.17;
@@ -530,26 +528,25 @@ address.address-footer p {
 .clients {
   margin: 0 auto;
 }
-.address-header-mail,
-.address-header-tel {
+.contacts-list__icon {
   margin-right: 10px;
 }
 
-.address-header-mail {
+.mail-icon {
   height: 12px;
   width: 16px;
 }
-.address-header-tel {
+.telephone-icon {
   height: 16px;
   width: 10px;
 }
-.telephone a,
-.mail a {
+.contacts-list__telephone a,
+.contacts-list__mail a {
   display: flex;
   align-items: center;
 }
-.telephone:hover,
-.mail:hover {
+.contacts-list__telephone:hover,
+.contacts-list__mail:hover {
   --color2: var(--highlight-color);
 }
 .join-us h3 {
@@ -611,7 +608,7 @@ address.address-footer p {
   height: 294px;
 }
 
-.nav-active::after {
+.picked::after {
   content: "";
   position: absolute;
   left: -5%;
