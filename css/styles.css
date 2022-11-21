@@ -137,6 +137,8 @@ summary {
   --icon-on-dark-color: #ffffff1a;
   --overlay-color: #2f303acc;
   --overlay-highlight: #2196f3e5;
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -158,8 +160,8 @@ a {
   text-decoration: none;
   color: inherit;
   fill: var(--alternative-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
 }
 a:hover,
 a:focus {
@@ -174,29 +176,30 @@ a:focus {
   margin: 0;
   padding: 0;
 }
+/* ---------------------------------------------------------------------------------------------------- */
+/*============HEADER============*/
 .header-wrapper {
   border-bottom: 1px solid #ececec;
   padding: 25px 0;
   justify-content: space-between;
 }
+/*============LOGO============*/
 .logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
 }
-
 .logo__primary-color {
   color: var(--highlight-color);
 }
-
 .logo__secondary-color--original {
   color: var(--dark-color);
 }
 .logo__secondary-color--alternative {
   color: var(--light-color);
 }
-
+/*============NAV-BAR============*/
 .navigation {
   font-size: 14px;
   font-weight: 500;
@@ -231,7 +234,7 @@ a:focus {
   background-color: var(--highlight-color);
   border-radius: 2px;
 }
-
+/*============CONTACTS============*/
 .contacts {
   font-size: 14px;
   font-weight: 500;
@@ -241,12 +244,19 @@ a:focus {
 .contacts__list {
   gap: 30px;
 }
-.contacts__icon {
+
+.contacts__item {
   display: flex;
   align-items: center;
   gap: 10px;
+  fill: var(--alternative-color);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
+.contacts__item:focus,
+.contacts__item:hover {
+  fill: var(--highlight-color);
+}
 .mail-icon {
   height: 12px;
   width: 16px;
@@ -256,11 +266,7 @@ a:focus {
   width: 12px;
 }
 
-.contacts__telephone:hover,
-.contacts__mail:hover {
-  --color2: var(--highlight-color);
-}
-
+/* ---------------------------------------------------------------------------------------------------- */
 .dark-background {
   background-color: var(--backgroundmain-color);
   display: block;
@@ -320,8 +326,9 @@ address.address-footer p {
   margin-top: 30px;
   width: 200px;
   height: 50px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
 }
 
 .button-order:hover,
@@ -386,9 +393,10 @@ address.address-footer p {
   border-style: hidden;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function),
+    box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 .button-category:focus,
 .button-category:hover {
@@ -426,7 +434,8 @@ address.address-footer p {
   position: relative;
   border: 1px solid var(--borderline-color);
   width: 372px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--transition-duration)
+    var(--transition-timing-function);
   overflow: hidden;
   background-color: var(--light-color);
 }
@@ -443,7 +452,8 @@ address.address-footer p {
   background-color: var(--overlay-highlight);
   padding: 49px 45px 49px 24px;
   transform: translatey(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
 }
 .project-item:focus .portfolio-overlay,
 .project-item:hover .portfolio-overlay {
@@ -511,8 +521,9 @@ address.address-footer p {
   padding: 12px;
   border-radius: 50%;
   overflow: visible;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration)
+      var(--transition-timing-function);
 }
 
 .social-svg:hover,
@@ -537,8 +548,9 @@ address.address-footer p {
   height: 92px;
   padding: 18px 32px 14px;
   fill: var(--alternative-borderline-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition-duration)
+      var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
 }
 .client-svg:hover,
 .client-svg:focus {
@@ -573,7 +585,8 @@ address.address-footer p {
   padding: 12px;
   border-radius: 50%;
   overflow: visible;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .social-svg-footer:hover,
@@ -621,9 +634,10 @@ address.address-footer p {
   width: 100%;
   height: 100%;
   background-color: #00000033;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    pointer-events 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--transition-duration)
+      var(--transition-timing-function),
+    visibility var(--transition-duration) var(--transition-timing-function),
+    pointer-events var(--transition-duration) var(--transition-timing-function);
 }
 .modal {
   width: 528px;
@@ -652,9 +666,11 @@ address.address-footer p {
   right: 8px;
   padding: 0;
   margin: 0;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--transition-duration)
+      var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration)
+      var(--transition-timing-function);
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -684,8 +700,9 @@ address.address-footer p {
   border-radius: 4px;
   align-items: center;
   padding: 0;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition-duration)
+      var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .contact-form-element:has(input:focus) {
@@ -799,9 +816,10 @@ address.address-footer p {
   padding: 0;
   fill: var(--light-color);
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
 }
 .button-newsletter:hover,
 .button-newsletter:focus {
@@ -830,8 +848,9 @@ address.address-footer p {
   border-radius: 4px;
   align-items: center;
   padding: 0;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition-duration)
+      var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .newsletter:has(input:focus) {
