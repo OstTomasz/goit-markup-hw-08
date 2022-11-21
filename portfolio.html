@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- ============HEADER============ -->
-    <header class="header-wrapper container">
+    <header class="container header-wrapper">
       <!-- ============LOGO============ -->
       <a class="logo" href="./index.html"
         ><span class="logo__primary-color">Web</span
@@ -23,7 +23,7 @@
       >
       <!-- ============NAV-BAR============ -->
       <nav class="navigation">
-        <ul class="list navigation__list">
+        <ul class="navigation__list">
           <li class="navigation__item">
             <a href="./index.html">Agencja</a>
           </li>
@@ -35,22 +35,18 @@
       </nav>
       <!-- ============CONTACTS============ -->
       <div class="contacts">
-        <ul class="list contacts__list">
-          <li class="contacts__mail">
-            <a class="contacts__icon" href="mailto:info@devstudio.com">
-              <svg class="mail-icon">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <svg class="mail-icon">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="contacts__telephone">
-            <a class="contacts__icon" href="tel:+48111111111">
-              <svg class="telephone-icon">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +48 111 111 111</a
-            >
+          <li class="contacts__item">
+            <svg class="telephone-icon">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            <a href="tel:+48111111111">+48 111 111 111</a>
           </li>
         </ul>
       </div>
@@ -258,32 +254,32 @@
       </div>
     </main>
     <!-- ============FOOTER============ -->
-    <footer class="dark-background">
-      <div class="container footer-wrapper">
-        <div class="column footer">
+    <footer class="container footer-wrapper">
+       <!-- ============FOOTER-MAIN============ -->
+        <div class="column footer-main">
           <!-- ============LOGO-ALTERNATIVE============ -->
           <a class="logo" href="./index.html"
             ><span class="logo__primary-color">Web</span
             ><span class="logo__secondary-color--alternative">Studio</span></a
           >
-          <address class="address-footer">
-            <p class="af-element">m. Warszawa, Aleje Jerozolimskie 21</p>
-            <ul class="list">
-              <li class="af-element">
-                <a class="link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+           <!-- ============ADDRESS============ -->
+          <address class="address">
+            <p class="address__item address__item--text">m. Warszawa, Aleje Jerozolimskie 21</p>
+            <ul class="address__list">
+              <li class="address__item address__item--link">
+                <a href="mailto:info@example.com">info@example.com</a>
               </li>
-              <li class="af-element">
-                <a class="link" href="tel:+48111111111">+48 111 111 111</a>
+              <li class="address__item address__item--link">
+                <a href="tel:+48111111111">+48 111 111 111</a>
               </li>
             </ul>
           </address>
         </div>
+                   <!-- ============JOIN============ -->
         <div class="join-us">
           <h3 class="footer-subheader">DOŁĄCZ DO NAS</h3>
           <div class="social-media">
-            <ul class="list social-media__list">
+            <ul class="social-media__list">
               <li>
                 <svg class="social-media__icon--footer">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
@@ -307,23 +303,23 @@
             </ul>
           </div>
         </div>
-
+                   <!-- ============NEWSLETTER============ -->
         <form class="newsletter-form">
-          <fieldset class="newsletter">
-            <label class="newsletter-label" for="newsletter-email">
+          <fieldset class="newsletter-form__item">
+            <label class="newsletter-form__label" for="newsletter-email">
               <h3 class="footer-subheader">ZAPISZ SIĘ DO NEWSLETTERA</h3>
             </label>
             <input
-              class="newsletter-input"
+              class="newsletter-form__input"
               type="email"
               name="email"
               placeholder="E-mail"
               id="newsletter-email"
             />
           </fieldset>
-          <button class="button-newsletter" type="submit">
-            <span class="button-newsletter-text">Zapisz się</span>
-            <svg class="newsletter-svg">
+          <button class="secondary-button" type="submit">
+            <span class="secondary-button__text">Zapisz się</span>
+            <svg class="secondary-button__icon">
               <use href="./images/icons.svg#icon-telegram"></use>
             </svg>
           </button>
