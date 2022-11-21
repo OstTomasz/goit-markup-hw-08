@@ -14,43 +14,45 @@
     <title>Studio</title>
   </head>
   <body>
-    <header class="header-wrapper">
-      <div class="container header">
-        <a class="logo link" href="./index.html"
-          ><span class="active-color">Web</span
-          ><span class="black">Studio</span></a
-        >
-        <nav class="navigation">
-          <ul class="list">
-            <li><a class="link" href="./index.html">Agencja</a></li>
-            <li class="relative">
-              <a class="link active-color picked" href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li><a class="link" href="#">Kontakt</a></li>
-          </ul>
-        </nav>
-        <div class="contacts-list">
-          <ul class="list">
-            <li class="contacts-list__mail">
-              <a class="link" href="mailto:info@devstudio.com">
-                <svg class="contacts-list__mail-icon">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts-list__telephone">
-              <a class="link" href="tel:+48111111111">
-                <svg class="contacts-list__telephone-icon">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +48 111 111 111</a
-              >
-            </li>
-          </ul>
-        </div>
+    <!-- ============HEADER============ -->
+    <header class="header-wrapper container">
+      <!-- ============LOGO============ -->
+      <a class="logo" href="./index.html"
+        ><span class="logo_primary-color">Web</span
+        ><span class="logo__secondary-color">Studio</span></a
+      >
+      <!-- ============NAV-BAR============ -->
+      <nav class="navigation">
+        <ul class="list navigation__list">
+          <li class="navigation__item">
+            <a href="./index.html">Agencja</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__picked" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="navigation__item"><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+      <!-- ============CONTACTS============ -->
+      <div class="contacts">
+        <ul class="list contacts__list">
+          <li class="contacts__mail">
+            <a class="contacts__icon" href="mailto:info@devstudio.com">
+              <svg class="mail-icon">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__telephone">
+            <a class="contacts__icon" href="tel:+48111111111">
+              <svg class="telephone-icon">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main class="portfolio-main">

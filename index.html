@@ -16,45 +16,44 @@
   <body>
     <!-- ============HEADER============ -->
     <header class="header-wrapper container">
-        <!-- ============LOGO============ -->
-        <a class="logo link" href="./index.html"
-          ><span class="active-color">Web</span
-          ><span class="logo__secondary-color">Studio</span></a
-        >
-        <!-- ============NAV-BAR============ -->
-        <nav class="navigation">
-          <ul class="list">
-            <li class="list__item">
-              <a
-                class="link active-color relative picked"
-                href="./index.html"
-                >Agencja</a
-              >
-            </li>
-            <li class="list__item">
-              <a class="link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="list__item"><a class="link" href="#">Kontakt</a></li>
-          </ul>
-        </nav>
-        <!-- ============CONTACTS-LIST============ -->
-        <ul class="list contacts-list">
-          <li class="contacts-list__mail">
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg class="contacts-list__icon mail-icon">
+      <!-- ============LOGO============ -->
+      <a class="logo" href="./index.html"
+        ><span class="logo_primary-color">Web</span
+        ><span class="logo__secondary-color">Studio</span></a
+      >
+      <!-- ============NAV-BAR============ -->
+      <nav class="navigation">
+        <ul class="list navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__picked" href="./index.html">Agencja</a>
+          </li>
+          <li class="navigation__item">
+            <a href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="navigation__item"><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+      <!-- ============CONTACTS============ -->
+      <div class="contacts">
+        <ul class="list contacts__list">
+          <li class="contacts__mail">
+            <a class="contacts__icon" href="mailto:info@devstudio.com">
+              <svg class="mail-icon">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contacts-list__telephone">
-            <a class="link" href="tel:+48111111111">
-              <svg class="contacts-list__icon telephone-icon">
+          <li class="contacts__telephone">
+            <a class="contacts__icon" href="tel:+48111111111">
+              <svg class="telephone-icon">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
             >
           </li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="dark-background headline">
@@ -63,9 +62,7 @@
             EFEKTYWNE ROZWIĄZANIA
             <br />DLA WASZEGO BIZNESU
           </h1>
-          <button class="button button-order" type="button" data-modal-open>
-            Zamów usługę
-          </button>
+          <button class="button-order" data-modal-open>Zamów usługę</button>
         </div>
       </section>
       <div class="container section">
@@ -328,7 +325,7 @@
     <footer class="dark-background">
       <div class="container footer-wrapper">
         <div class="column footer">
-          <a class="logo link" href="./index.html"
+          <a class="logo" href="./index.html"
             ><span class="active-color">Web</span
             ><span class="white">Studio</span></a
           >
@@ -336,12 +333,10 @@
             <p class="af-element">m. Warszawa, Aleje Jerozolimskie 21</p>
             <ul class="list">
               <li class="af-element">
-                <a class="link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+                <a href="mailto:info@example.com">info@example.com</a>
               </li>
               <li class="af-element">
-                <a class="link" href="tel:+48111111111">+48 111 111 111</a>
+                <a href="tel:+48111111111">+48 111 111 111</a>
               </li>
             </ul>
           </address>
@@ -398,7 +393,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-btn" data-modal-close>
+        <button class="modal-btn" data-modal-close>
           <svg class="close-btn">
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
@@ -473,7 +468,7 @@
               <a href="#">Politykę Prywatności</a>.
             </p>
           </label>
-          <button class="button button-order" type="submit">Wyślij</button>
+          <button class="button-order" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
