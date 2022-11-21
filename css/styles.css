@@ -203,6 +203,19 @@ a:focus {
   visibility: hidden;
   pointer-events: none;
 }
+.backdrop {
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000033;
+  transition: opacity var(--transition-duration)
+      var(--transition-timing-function),
+    visibility var(--transition-duration) var(--transition-timing-function),
+    pointer-events var(--transition-duration) var(--transition-timing-function);
+}
 /* ---------------------------------------------------------------------------------------------------- */
 /*============HEADER============*/
 .header-wrapper {
@@ -455,7 +468,28 @@ a:focus {
   box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
     0px 3px 1px 0px #0000001a;
 }
+/* ---------------------------------------------------------------------------------------------------- */
+/*============CLIENTS============*/
 
+.client-icon {
+  border: 1px solid var(--alternative-borderline-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding: 18px 32px 14px;
+  fill: var(--alternative-borderline-color);
+  transition: border-color var(--transition-duration)
+      var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
+}
+.client-icon:hover,
+.client-icon:focus {
+  cursor: pointer;
+  border: 1px solid var(--highlight-color);
+  fill: var(--highlight-color);
+}
+
+/* --------------------------------------------------------------------PORTFOLIO-------------------------------------------------------------------- */
 .category-buttons {
   gap: 8px;
   padding-bottom: 16px;
@@ -532,73 +566,6 @@ a:focus {
   margin-bottom: 91px;
 }
 
-.client-svg {
-  border: 1px solid var(--alternative-borderline-color);
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  padding: 18px 32px 14px;
-  fill: var(--alternative-borderline-color);
-  transition: border-color var(--transition-duration)
-      var(--transition-timing-function),
-    fill var(--transition-duration) var(--transition-timing-function);
-}
-.client-svg:hover,
-.client-svg:focus {
-  cursor: pointer;
-  border: 1px solid var(--highlight-color);
-  fill: var(--highlight-color);
-}
-
-.clients {
-  margin: 0 auto;
-}
-
-.join-us h3 {
-  margin: 12px 0 20px 0;
-  font-size: 14px;
-  line-height: 1.17;
-  color: var(--light-color);
-}
-.join-us {
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 70px;
-}
-.join-us .social-media {
-  margin: 0;
-}
-.social-media__icon--footer {
-  background-color: var(--icon-on-dark-color);
-  height: 44px;
-  width: 44px;
-  fill: var(--light-color);
-  padding: 12px;
-  border-radius: 50%;
-  overflow: visible;
-  transition: background-color var(--transition-duration)
-    var(--transition-timing-function);
-}
-
-.social-media__icon--footer:hover,
-.social-media__icon--footer:focus {
-  background-color: Var(--highlight-color);
-  cursor: pointer;
-}
-
-.backdrop {
-  position: fixed;
-  display: flex;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #00000033;
-  transition: opacity var(--transition-duration)
-      var(--transition-timing-function),
-    visibility var(--transition-duration) var(--transition-timing-function),
-    pointer-events var(--transition-duration) var(--transition-timing-function);
-}
 .modal {
   width: 528px;
   height: 581px;
@@ -751,6 +718,93 @@ a:focus {
   margin-left: 124px;
   padding: 0;
 }
+
+/* ---------------------------------------------------------------------------------------------------- */
+/*============FOOTER============*/
+.footer-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 60px 0;
+}
+
+.dark-background {
+  background-color: var(--backgroundmain-color);
+  max-width: 1600px;
+  margin: 0 auto;
+  display: block;
+}
+.footer-subheader {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.address-footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--light-color);
+}
+.address-footer .link {
+  color: var(--lightalpha-color);
+}
+.address-footer .link:focus,
+.address-footer .link:hover {
+  color: var(--highlight-color);
+}
+
+.address-footer ul {
+  flex-direction: column;
+  gap: 0;
+}
+.address-footer li:last-child {
+  margin-bottom: 0;
+}
+.af-element {
+  margin: 4.5px 0;
+}
+address.address-footer p {
+  margin-top: 0;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+}
+
+.footer {
+  align-items: flex-start;
+}
+.join-us h3 {
+  margin: 12px 0 20px 0;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--light-color);
+}
+.join-us {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 70px;
+}
+.join-us .social-media {
+  margin: 0;
+}
+.social-media__icon--footer {
+  background-color: var(--icon-on-dark-color);
+  height: 44px;
+  width: 44px;
+  fill: var(--light-color);
+  padding: 12px;
+  border-radius: 50%;
+  overflow: visible;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.social-media__icon--footer:hover,
+.social-media__icon--footer:focus {
+  background-color: Var(--highlight-color);
+  cursor: pointer;
+}
 .newsletter-form {
   display: flex;
   margin-left: 78px;
@@ -838,59 +892,4 @@ a:focus {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: #ffffff99;
-}
-/* ---------------------------------------------------------------------------------------------------- */
-/*============FOOTER============*/
-.footer-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 60px 0;
-}
-
-.dark-background {
-  background-color: var(--backgroundmain-color);
-  max-width: 1600px;
-  margin: 0 auto;
-  display: block;
-}
-.footer-subheader {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-}
-.address-footer {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--light-color);
-}
-.address-footer .link {
-  color: var(--lightalpha-color);
-}
-.address-footer .link:focus,
-.address-footer .link:hover {
-  color: var(--highlight-color);
-}
-
-.address-footer ul {
-  flex-direction: column;
-  gap: 0;
-}
-.address-footer li:last-child {
-  margin-bottom: 0;
-}
-.af-element {
-  margin: 4.5px 0;
-}
-address.address-footer p {
-  margin-top: 0;
-}
-
-.footer .logo {
-  margin-bottom: 20px;
-}
-
-.footer {
-  align-items: flex-start;
 }
