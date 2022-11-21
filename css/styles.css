@@ -269,6 +269,8 @@ a:focus {
 /* ---------------------------------------------------------------------------------------------------- */
 .dark-background {
   background-color: var(--backgroundmain-color);
+  max-width: 1600px;
+  margin: 0 auto;
   display: block;
 }
 .footer-subheader {
@@ -361,7 +363,9 @@ address.address-footer p {
 }
 .team-div {
   background-color: var(--backgroundalt-color);
+  max-width: 1600px;
   padding: 94px 0;
+  margin: 0 auto;
 }
 .member {
   background-color: var(--light-color);
@@ -491,6 +495,7 @@ address.address-footer p {
   padding: 200px 0;
   background-image: linear-gradient(#2f303a66, #2f303a66),
     url(../images/headline-background.jpg);
+  background-size: 1600px auto;
   background-repeat: no-repeat;
   background-position: center;
 }
