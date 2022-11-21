@@ -323,7 +323,7 @@ a:focus {
   font-family: Roboto;
   letter-spacing: 0.06em;
 }
-/*============BUTTON ORDER============*/
+/*============PRIMARY-BUTTON============*/
 .primary-button {
   background-color: var(--highlight-color);
   color: var(--light-color);
@@ -621,7 +621,17 @@ a:focus {
   display: block;
 }
 /* --------------------------------------------------------------------PORTFOLIO-------------------------------------------------------------------- */
-.button-category {
+.portfolio-wrapper {
+  margin-top: 97px;
+  margin-bottom: 91px;
+}
+/*============CATEGORY-BUTTONS============*/
+.categories {
+  gap: 8px;
+  padding-bottom: 16px;
+  margin-bottom: 34px;
+}
+.reverse-style-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -635,38 +645,18 @@ a:focus {
     color var(--transition-duration) var(--transition-timing-function),
     box-shadow var(--transition-duration) var(--transition-timing-function);
 }
-.button-category:focus,
-.button-category:hover {
+.reverse-style-button:focus,
+.reverse-style-button:hover {
   background-color: var(--highlight-color);
   color: var(--light-color);
   box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
     0px 3px 1px 0px #0000001a;
 }
-.category-buttons {
-  gap: 8px;
-  padding-bottom: 16px;
-  margin-bottom: 34px;
+/*============PROJECTS-GRID============*/
+.card-set {
+  flex-wrap: wrap;
 }
-
-.project {
-  position: relative;
-  font-size: 18px;
-  line-height: 2;
-  margin-inline: 24px;
-  margin-top: 20px;
-  margin-bottom: 4px;
-  z-index: 2;
-}
-.project-category {
-  position: relative;
-  color: var(--alternative-color);
-  font-size: 16px;
-  line-height: 1.875;
-  margin-inline: 24px;
-  margin-bottom: 20px;
-  z-index: 2;
-}
-.project-item {
+.card-set__item {
   position: relative;
   border: 1px solid var(--borderline-color);
   width: 372px;
@@ -675,13 +665,41 @@ a:focus {
   overflow: hidden;
   background-color: var(--light-color);
 }
-.project-item:hover,
-.project-item:focus {
+.card-set__item:hover,
+.card-set__item:focus {
   cursor: pointer;
   box-shadow: 1px 4px 6px 0px #00000029, 4px 4px 0px #0000000f,
     0px 1px 1px 0px #0000001f;
 }
-.portfolio-overlay {
+.card-set__description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 114px;
+  background-color: var(--light-color);
+  z-index: 1;
+}
+
+.card-set__title {
+  position: relative;
+  font-size: 18px;
+  line-height: 2;
+  margin-inline: 24px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  z-index: 2;
+}
+.card-set__category {
+  position: relative;
+  color: var(--alternative-color);
+  font-size: 16px;
+  line-height: 1.875;
+  margin-inline: 24px;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.card-set__overlay {
   position: absolute;
   width: 100%;
   height: 295px;
@@ -691,37 +709,22 @@ a:focus {
   transition: transform var(--transition-duration)
     var(--transition-timing-function);
 }
-.project-item:focus .portfolio-overlay,
-.project-item:hover .portfolio-overlay {
+.card-set__item:focus .card-set__overlay,
+.card-set__item:hover .card-set__overlay {
   transform: translatey(0);
 }
 
-.portfolio-overlay p {
+.card-set__overlay-text {
   font-size: 18px;
   line-height: 1.55;
   color: var(--light-color);
 }
-.project-item-description {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 114px;
-  background-color: var(--light-color);
-  z-index: 1;
-}
 
-.card-set {
-  flex-wrap: wrap;
-}
-.portfolio-main {
-  margin-top: 97px;
-  margin-bottom: 91px;
-}
 /* --------------------------------------------------------------------FOOTER-------------------------------------------------------------------- */
 .footer-wrapper {
   display: flex;
   align-items: flex-start;
-  padding: 60px 0 60px 215px;
+  padding: 60px 0 60px 150px;
   background-color: var(--backgroundmain-color);
   min-width: 1600px;
 }
@@ -752,7 +755,6 @@ a:focus {
 .address__list:last-child {
   margin-bottom: 0;
 }
-
 .address__item--text {
   margin-top: 0;
 }
@@ -765,7 +767,6 @@ a:focus {
   color: var(--light-color);
 }
 /*============JOIN-US============*/
-
 .join-us {
   flex-direction: column;
   justify-content: flex-start;
@@ -774,14 +775,12 @@ a:focus {
 .join-us .social-media {
   margin: 0;
 }
-
 .social-media__icon--footer {
   background-color: var(--icon-on-dark-color);
   fill: var(--light-color);
   transition: background-color var(--transition-duration)
     var(--transition-timing-function);
 }
-
 .social-media__icon--footer:hover,
 .social-media__icon--footer:focus {
   background-color: Var(--highlight-color);
