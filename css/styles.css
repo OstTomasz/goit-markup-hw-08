@@ -156,6 +156,13 @@ ul {
   margin: 0 auto;
   padding: 0;
 }
+ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -169,13 +176,6 @@ a:focus {
   fill: var(--highlight-color);
 }
 
-.list {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-}
 /* ---------------------------------------------------------------------------------------------------- */
 /*============HEADER============*/
 .header-wrapper {
@@ -313,6 +313,8 @@ address.address-footer p {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  font-family: Roboto;
+  letter-spacing: 0.06em;
 }
 .button-order {
   background-color: var(--highlight-color);
