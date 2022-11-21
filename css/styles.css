@@ -774,14 +774,10 @@ a:focus {
 .join-us .social-media {
   margin: 0;
 }
+
 .social-media__icon--footer {
   background-color: var(--icon-on-dark-color);
-  height: 44px;
-  width: 44px;
   fill: var(--light-color);
-  padding: 12px;
-  border-radius: 50%;
-  overflow: visible;
   transition: background-color var(--transition-duration)
     var(--transition-timing-function);
 }
@@ -789,8 +785,8 @@ a:focus {
 .social-media__icon--footer:hover,
 .social-media__icon--footer:focus {
   background-color: Var(--highlight-color);
-  cursor: pointer;
 }
+/*============NEWSLETTER============*/
 .newsletter-form {
   display: flex;
   margin-left: 78px;
@@ -836,7 +832,7 @@ a:focus {
   letter-spacing: 0.03em;
   color: #ffffff99;
 }
-
+/*============SECONDARY-BUTTON============*/
 .secondary-button {
   position: absolute;
   right: -212px;
