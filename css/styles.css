@@ -137,6 +137,7 @@ summary {
 /* KONIEC NORMALIZATORA */
 
 :root {
+  --main-text-color: #212121;
   --alternative-color: #757575;
   --highlight-color: #2196f3;
   --backgroundmain-color: #2f303a;
@@ -155,7 +156,7 @@ summary {
 body {
   cursor: default;
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  color: var(--main-text-color);
   margin: 0;
   padding: 0;
 }
@@ -187,7 +188,11 @@ a:focus {
   margin: 0;
   padding: 0;
 }
-
+.header-wrapper {
+  border-bottom: 1px solid #ececec;
+  padding: 25px 0;
+  justify-content: space-between;
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -195,22 +200,17 @@ a:focus {
   line-height: 1.17;
 }
 
-.logo_primary-color {
+.logo__primary-color {
   color: var(--highlight-color);
 }
-.white {
+
+.logo__secondary-color--original {
+  color: var(--dark-color);
+}
+.logo__secondary-color--alternative {
   color: var(--light-color);
 }
 
-.logo__secondary-color {
-  color: var(--dark-color);
-}
-
-.header-wrapper {
-  border-bottom: 1px solid #ececec;
-  padding: 25px 0;
-  justify-content: space-between;
-}
 .navigation {
   font-size: 14px;
   font-weight: 500;
