@@ -13,11 +13,11 @@
   transition: box-shadow var(--transition-duration)
       var(--transition-timing-function),
     color var(--transition-duration) var(--transition-timing-function);
-}
 
-.primary-button:hover,
-.primary-button:focus {
-  color: var(--dark-color);
-  box-shadow: inset 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
-    0px 3px 1px 0px #0000001a;
+  &:hover,
+  &:focus {
+    color: var(--dark-color);
+    box-shadow: inset 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+      0px 3px 1px 0px #0000001a;
+  }
 }
