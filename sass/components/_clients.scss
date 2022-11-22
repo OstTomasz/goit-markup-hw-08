@@ -8,10 +8,11 @@
   transition: border-color var(--transition-duration)
       var(--transition-timing-function),
     fill var(--transition-duration) var(--transition-timing-function);
-}
-.client-icon:hover,
-.client-icon:focus {
-  cursor: pointer;
-  border: 1px solid var(--highlight-color);
-  fill: var(--highlight-color);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border: 1px solid var(--highlight-color);
+    fill: var(--highlight-color);
+  }
 }

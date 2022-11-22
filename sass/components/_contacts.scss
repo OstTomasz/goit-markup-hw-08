@@ -3,22 +3,24 @@
   font-weight: 500;
   line-height: 1.17;
   color: var(--alternative-color);
-}
-.contacts__list {
-  gap: 30px;
-}
 
-.contacts__item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  fill: var(--alternative-color);
-  transition: fill var(--transition-duration) var(--transition-timing-function);
-}
+  &list {
+    gap: 30px;
+  }
 
-.contacts__item:focus,
-.contacts__item:hover {
-  fill: var(--highlight-color);
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    fill: var(--alternative-color);
+    transition: fill var(--transition-duration)
+      var(--transition-timing-function);
+
+    &:focus,
+    &:hover {
+      fill: var(--highlight-color);
+    }
+  }
 }
 .mail-icon {
   height: 12px;
