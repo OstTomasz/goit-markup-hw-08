@@ -1,0 +1,28 @@
+@import "./utils/normalize"; //normalizer
+@import "./utils/variables"; //zmienne
+@import "./utils/general"; //style globalne
+@import "./components/header"; //header-wrapper
+@import "./components/logo"; //header
+@import "./components/nav-bar"; //header
+@import "./components/contacts"; //header
+@import "./components/headline"; //index-sekcja z obrazkiem
+@import "./components/button-primary"; //index-sekcja z obrazkiem, modal z formularzem kontaktowym
+@import "./components/strenghts"; //index-1a sekcja
+@import "./components/trumps"; //index czym się zajmujemy
+@import "./components/team"; //index team
+@import "./components/social-media"; //index team
+@import "./components/clients"; // index nasi klienci
+@import "./components/modal"; //po kliknięciu index "zamów usługę"
+@import "./components/button-close"; //modal
+@import "./components/form-contact"; //modal
+@import "./components/checkmark"; //modal
+@import "./components/portfolio"; //portfolio-wrapper
+@import "./components/buttons-category"; //portfolio
+@import "./components/grid-projects"; //portfolio
+@import "./components/footer"; //footer-wrapper
+@import "./components/footer-main"; //footer 1a część
+@import "./components/address"; //footer 1a część
+@import "./components/footer-subheader"; //footer tytuły części skłądowych footera
+@import "./components/join-us"; //footer dołącz do nas
+@import "./components/newsletter"; //footer newsletter
+@import "./components/button-secondary"; //footer newsletter

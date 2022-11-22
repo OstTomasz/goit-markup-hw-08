@@ -1,0 +1,16 @@
+.headline {
+  padding: 200px 0;
+  background-image: linear-gradient(#2f303a66, #2f303a66),
+    url(../images/headline-background.jpg);
+  background-size: 1600px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.headline__title {
+  color: var(--light-color);
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  font-family: Roboto;
+  letter-spacing: 0.06em;
+}

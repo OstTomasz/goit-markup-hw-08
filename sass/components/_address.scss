@@ -1,0 +1,22 @@
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--light-color);
+}
+.address__item {
+  margin: 4.5px 0;
+}
+.address__item--link {
+  color: var(--lightalpha-color);
+}
+.address__list {
+  flex-direction: column;
+  gap: 0;
+}
+.address__list:last-child {
+  margin-bottom: 0;
+}
+.address__item--text {
+  margin-top: 0;
+}

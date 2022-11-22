@@ -1,0 +1,18 @@
+.join-us {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 70px;
+}
+.join-us .social-media {
+  margin: 0;
+}
+.social-media__icon--footer {
+  background-color: var(--icon-on-dark-color);
+  fill: var(--light-color);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+.social-media__icon--footer:hover,
+.social-media__icon--footer:focus {
+  background-color: Var(--highlight-color);
+}

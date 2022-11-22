@@ -1,0 +1,43 @@
+.secondary-button {
+  position: absolute;
+  right: -212px;
+  top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--highlight-color);
+  color: var(--light-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  border-style: hidden;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  fill: var(--light-color);
+  transition: box-shadow var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+  color: var(--dark-color);
+  box-shadow: inset 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+    0px 3px 1px 0px #0000001a;
+  fill: var(--dark-color);
+  cursor: pointer;
+}
+.secondary-button__text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+}
+.secondary-button__icon {
+  height: 24px;
+  width: 24px;
+}

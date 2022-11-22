@@ -1,0 +1,17 @@
+.client-icon {
+  border: 1px solid var(--alternative-borderline-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding: 18px 32px 14px;
+  fill: var(--alternative-borderline-color);
+  transition: border-color var(--transition-duration)
+      var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
+}
+.client-icon:hover,
+.client-icon:focus {
+  cursor: pointer;
+  border: 1px solid var(--highlight-color);
+  fill: var(--highlight-color);
+}
