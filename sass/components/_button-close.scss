@@ -17,15 +17,16 @@
     fill var(--transition-duration) var(--transition-timing-function),
     background-color var(--transition-duration)
       var(--transition-timing-function);
-}
-.close-button:hover,
-.close-button:focus {
-  box-shadow: inset 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
-    0px 3px 1px 0px #0000001a;
-  background-color: var(--highlight-color);
-  fill: var(--light-color);
-}
-.close-button__icon {
-  height: 11px;
-  width: 11px;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+      0px 3px 1px 0px #0000001a;
+    background-color: var(--highlight-color);
+    fill: var(--light-color);
+  }
+  &__icon {
+    height: 11px;
+    width: 11px;
+  }
 }
