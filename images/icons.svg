@@ -36,4 +36,7 @@
     <symbol id="icon-telegram" viewBox="0 0 32 32">
       <path d="M32 0 0 18l10.227 3.788L26 7 14.002 23.186l.01.004-.012-.004V32l5.735-6.691L27 28l5-28z"/>
     </symbol>
+    <symbol id="icon-menu" viewBox="0 0 48 32">
+      <path d="M0 5.333V0h48v5.333H0zm0 13.334h48v-5.333H0v5.333zM0 32h48v-5.333H0V32z"/>
+    </symbol>
 </defs></svg>
