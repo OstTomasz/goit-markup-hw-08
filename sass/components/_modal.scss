@@ -13,8 +13,8 @@
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--light-color);
   margin: auto;
   padding: 40px;
@@ -24,9 +24,17 @@
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
     0px 1px 3px 0px #0000001f;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 
   &__title {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
     font-size: 20px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
   }
 }

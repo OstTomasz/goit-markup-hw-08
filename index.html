@@ -110,6 +110,88 @@
         </div>
       </section>
     </main>
+    <!-- ============ORDER-MODAL============ -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-button" data-modal-close>
+          <svg class="close-button__icon">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Zostaw swoje dane w formularzu poniżej</h2>
+        <form class="contact-form">
+          <fieldset class="contact-form__item">
+            <label class="contact-form__label" for="user-name">Imię </label>
+            <svg class="contact-form__icon">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+            <input
+              class="contact-form__input"
+              type="text"
+              name="user-name"
+              id="user-name"
+            />
+          </fieldset>
+          <fieldset class="contact-form__item">
+            <label class="contact-form__label" for="user-telephone">
+              Telefon
+            </label>
+            <svg class="contact-form__icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            <input
+              class="contact-form__input"
+              type="tel"
+              name="user-telephone"
+              id="user-telephone"
+            />
+          </fieldset>
+          <fieldset class="contact-form__item">
+            <label class="contact-form__label" for="user-mail">Email </label>
+            <svg class="contact-form__icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            <input
+              class="contact-form__input"
+              type="email"
+              name="user-mail"
+              id="user-mail"
+            />
+          </fieldset>
+          <fieldset class="contact-form__item">
+            <label class="contact-form__label" for="user-comment"
+              >Komentarz
+            </label>
+            <textarea
+              class="contact-form__input contact-form__comment"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </fieldset>
+          <label class="contact-form__privacy-policy">
+            <input
+              class="checkmark"
+              type="checkbox"
+              name="privacy-policy"
+              required
+            />
+            <svg class="checkmark__unchecked">
+              <use href="./images/icons.svg#icon-checkbox"></use>
+            </svg>
+            <svg class="checkmark__checked">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+            <p class="contact-form__privacy-rule">
+              Oświadczam iż akceptuję
+              <a class="contact-form__terms" href="#"> Regulamin </a> i
+              <a class="contact-form__terms" href="#"> Politykę Prywatności</a>.
+            </p>
+          </label>
+          <button class="primary-button" type="submit">Wyślij</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
