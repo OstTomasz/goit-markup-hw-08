@@ -9,6 +9,9 @@
   height: 100vh;
   background-color: #fff;
   padding: 48px 40px;
+  @media screen and (max-width: 320px) {
+    padding: 20px 15px;
+  }
   z-index: 2;
   transition: opacity var(--transition-duration)
       var(--transition-timing-function),
@@ -61,7 +64,7 @@
     margin-bottom: 40px;
   }
   &__contacts-mail {
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 360px) {
       font-size: 24px;
     }
     font-size: 34px;
@@ -78,8 +81,9 @@
     color: var(--alternative-color);
   }
   &__social {
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 360px) {
       font-size: 15px;
+      gap: 20px;
     }
     display: flex;
     flex-wrap: wrap;
