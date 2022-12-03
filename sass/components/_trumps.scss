@@ -1,4 +1,8 @@
 .trumps {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
   &__item {
     height: 294px;
     position: relative;
