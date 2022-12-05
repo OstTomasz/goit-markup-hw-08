@@ -1,17 +1,20 @@
 .categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
-  padding-bottom: 16px;
-  margin-bottom: 34px;
+  margin: 0 auto 40px;
 }
 .reverse-style-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
+  letter-spacing: 0.03em;
   text-align: center;
   background-color: var(--backgroundalt-color);
   border-style: hidden;
   border-radius: 4px;
-  padding: 6px 22px;
+  padding: 6px 30px;
   transition: background-color var(--transition-duration)
       var(--transition-timing-function),
     color var(--transition-duration) var(--transition-timing-function),

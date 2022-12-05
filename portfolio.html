@@ -14,45 +14,93 @@
     <title>Studio</title>
   </head>
   <body>
-    <!-- ============HEADER============ -->
-    <header class="container header-wrapper">
-      <!-- ============LOGO============ -->
-      <a class="logo" href="./index.html"
-        ><span class="logo__primary-color">Web</span
-        ><span class="logo__secondary-color--original">Studio</span></a
-      >
-      <!-- ============NAV-BAR============ -->
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
+    <!-- ============MOBILE MENU============ -->
+    <div class="mobile-menu is-hidden">
+      <button class="close-button">
+        <svg class="close-button__icon">
+          <use href="./images/icons.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__elements">
+        <ul class="mobile-menu__nav">
+          <li>
             <a href="./index.html">Agencja</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__picked" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="navigation__item"><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-      <!-- ============CONTACTS============ -->
-      <div class="contacts">
-        <ul class="contacts__list">
           <li>
-            <a class="contacts__item" href="mailto:info@devstudio.com">
-              <svg class="mail-icon">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
+            <a href="./portfolio.html">Portfolio</a>
           </li>
-          <li>
-            <a class="contacts__item" href="tel:+48111111111">
-              <svg class="telephone-icon">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +48 111 111 111
-            </a>
-          </li>
+          <li><a href="#">Kontakt</a></li>
         </ul>
+
+        <div>
+          <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__contacts-mail">
+              <a href="mailto:info@devstudio.com"> info@devstudio.com </a>
+            </li>
+            <li class="mobile-menu__contacts-tel">
+              <a href="tel:+48111111111"> +48 111 111 111 </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__social">
+            <li class="mobile-menu__social-item"><a href="#">Instagram</a></li>
+            <li class="mobile-menu__social-item"><a href="#">Twitter</a></li>
+            <li class="mobile-menu__social-item"><a href="#">Facebook</a></li>
+            <li class="mobile-menu__social-item"><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ============HEADER============ -->
+    <header class="header-wrapper">
+      <div class="container">
+        <!-- ============LOGO============ -->
+        <a class="logo" href="./index.html"
+          ><span class="logo__primary-color">Web</span
+          ><span class="logo__secondary-color--original">Studio</span></a
+        >
+        <!-- ============NAV-BAR============ -->
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./index.html">Agencja</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__picked" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navigation__item"><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div></div>
+
+        <!-- ============CONTACTS============ -->
+        <div class="contacts">
+          <ul class="contacts__list">
+            <li>
+              <a class="contacts__item" href="mailto:info@devstudio.com">
+                <svg class="mail-icon">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a class="contacts__item" href="tel:+48111111111">
+                <svg class="telephone-icon">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- ============MOBILE-MENU-BUTTON============ -->
+        <button class="mobile-menu-button">
+          <svg class="mobile-menu-button__icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="portfolio-wrapper">
@@ -86,12 +134,7 @@
                 konkurencji.
               </p>
             </div>
-            <img
-              src="./images/portfolio1.jpg"
-              alt="Otwarty laptop ze stroną internetową"
-              width="370"
-              height="294"
-            />
+            <div class="card-set__photo--1"></div>
             <div class="card-set__description"></div>
             <h3 class="card-set__title">Technocrack</h3>
             <p class="card-set__category">Strona internetowa</p>
@@ -105,12 +148,7 @@
                 konkurencji.
               </p>
             </div>
-            <img
-              src="./images/portfolio2.jpg"
-              alt="Koszykarze"
-              width="370"
-              height="294"
-            />
+            <div class="card-set__photo--2"></div>
             <div class="card-set__description"></div>
             <h3 class="card-set__title">Grafika New Orlean vs Golden Star</h3>
             <p class="card-set__category">Dizajn</p>
@@ -124,12 +162,7 @@
                 konkurencji.
               </p>
             </div>
-            <img
-              src="./images/portfolio3.jpg"
-              alt="Logo restauracji 'The seafood'"
-              width="370"
-              height="294"
-            />
+            <div class="card-set__photo--3"></div>
             <div class="card-set__description"></div>
             <h3 class="card-set__title">Restauracja Seafood</h3>
             <p class="card-set__category">Aplikacja</p>
@@ -143,12 +176,7 @@
                 konkurencji.
               </p>
             </div>
-            <img
-              src="./images/portfolio4.jpg"
-              alt="Słuchawki nauszne"
-              width="370"
-              height="294"
-            />
+            <div class="card-set__photo--4"></div>
             <div class="card-set__description"></div>
             <h3 class="card-set__title">Projekt Prime</h3>
             <p class="card-set__category">Marketing</p>
@@ -162,12 +190,7 @@
                 konkurencji.
               </p>
             </div>
-            <img
-              src="./images/portfolio5.jpg"
-              alt="Białe i brązowe pudełko"
-              width="370"
-              height="294"
-            />
+            <div class="card-set__photo--5"></div>
             <div class="card-set__description"></div>
             <h3 class="card-set__title">Projekt Boxes</h3>
             <p class="card-set__category">Aplikacja</p>
@@ -181,12 +204,7 @@
                 konkurencji.
               </p>
             </div>
-            <img
-              src="./images/portfolio6.jpg"
-              alt="Desktop Apple"
-              width="370"
-              height="294"
-            />
+            <div class="card-set__photo--6"></div>
             <div class="card-set__description"></div>
             <h3 class="card-set__title">Inspiration has no Borders</h3>
             <p class="card-set__category">Strona internetowa</p>
@@ -200,12 +218,7 @@
                 konkurencji.
               </p>
             </div>
-            <img
-              src="./images/portfolio7.jpg"
-              alt="Otwarta książka"
-              width="370"
-              height="294"
-            />
+            <div class="card-set__photo--7"></div>
             <div class="card-set__description"></div>
             <h3 class="card-set__title">Magazyn Limited Edition</h3>
             <p class="card-set__category">Dizajn</p>
@@ -219,12 +232,7 @@
                 konkurencji.
               </p>
             </div>
-            <img
-              src="./images/portfolio8.jpg"
-              alt="Biała etykieta na sznurku"
-              width="370"
-              height="294"
-            />
+            <div class="card-set__photo--8"></div>
             <div class="card-set__description"></div>
             <h3 class="card-set__title">Projekt LAB</h3>
             <p class="card-set__category">Marketing</p>
@@ -238,12 +246,7 @@
                 konkurencji.
               </p>
             </div>
-            <img
-              src="./images/portfolio9.jpg"
-              alt="Praca na laptopie"
-              width="370"
-              height="294"
-            />
+            <div class="card-set__photo--9"></div>
             <div class="card-set__description"></div>
             <h3 class="card-set__title">Growing Business</h3>
             <p class="card-set__category">Aplikacja</p>
@@ -252,56 +255,58 @@
       </div>
     </main>
     <!-- ============FOOTER============ -->
-    <footer class="footer-wrapper">
-      <div class="container">
-        <!-- ============FOOTER-MAIN============ -->
-        <div class="column footer-main">
-          <!-- ============LOGO-ALTERNATIVE============ -->
-          <a class="logo" href="./index.html"
-            ><span class="logo__primary-color">Web</span
-            ><span class="logo__secondary-color--alternative">Studio</span></a
-          >
-          <!-- ============ADDRESS============ -->
-          <address class="address">
-            <p class="address__item address__item--text">
-              m. Warszawa, Aleje Jerozolimskie 21
-            </p>
-            <ul class="address__list">
-              <li class="address__item address__item--link">
-                <a href="mailto:info@example.com">info@example.com</a>
-              </li>
-              <li class="address__item address__item--link">
-                <a href="tel:+48111111111">+48 111 111 111</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <!-- ============JOIN============ -->
-        <div class="join-us">
-          <h3 class="footer-subheader">DOŁĄCZ DO NAS</h3>
-          <div class="social-media">
-            <ul class="social-media__list">
-              <li>
-                <svg class="social-media__icon social-media__icon--footer">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </li>
-              <li>
-                <svg class="social-media__icon social-media__icon--footer">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </li>
-              <li>
-                <svg class="social-media__icon social-media__icon--footer">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </li>
-              <li>
-                <svg class="social-media__icon social-media__icon--footer">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </li>
-            </ul>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <div class="column footer-wrapper__tablet">
+          <!-- ============FOOTER-MAIN============ -->
+          <div class="column footer-wrapper__main">
+            <!-- ============LOGO-ALTERNATIVE============ -->
+            <a class="logo" href="./index.html"
+              ><span class="logo__primary-color">Web</span
+              ><span class="logo__secondary-color--alternative">Studio</span></a
+            >
+            <!-- ============ADDRESS============ -->
+            <address class="address">
+              <p class="address__item address__item--text">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </p>
+              <ul class="address__list">
+                <li class="address__item address__item--link">
+                  <a href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="address__item address__item--link">
+                  <a href="tel:+48111111111">+48 111 111 111</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!-- ============JOIN============ -->
+          <div class="join-us container">
+            <h3 class="footer-subheader">DOŁĄCZ DO NAS</h3>
+            <div class="social-media">
+              <ul class="social-media__list">
+                <li>
+                  <svg class="social-media__icon social-media__icon--footer">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="social-media__icon social-media__icon--footer">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="social-media__icon social-media__icon--footer">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="social-media__icon social-media__icon--footer">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <!-- ============NEWSLETTER============ -->
@@ -327,5 +332,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
