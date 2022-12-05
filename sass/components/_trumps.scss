@@ -7,6 +7,38 @@
     height: 294px;
     position: relative;
   }
+  %photo-trump {
+    width: 370px;
+    height: 294px;
+    background-size: cover;
+  }
+  &__photo--1 {
+    @extend %photo-trump;
+    background-image: url(../images/trump1.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/trump1@2x.jpg);
+    }
+  }
+  &__photo--2 {
+    @extend %photo-trump;
+    background-image: url(../images/trump2.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/trump2@2x.jpg);
+    }
+  }
+  &__photo--3 {
+    @extend %photo-trump;
+    background-image: url(../images/trump3.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/trump3@2x.jpg);
+    }
+  }
   &__overlay {
     position: absolute;
     bottom: 0px;
