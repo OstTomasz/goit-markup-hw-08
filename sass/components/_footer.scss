@@ -1,9 +1,35 @@
+.footer {
+  background-color: var(--backgroundmain-color);
+}
 .footer-wrapper {
   margin: 0 auto;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  flex-direction: column;
   padding: 60px 0;
-  background-color: var(--backgroundmain-color);
-  max-width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  &__main {
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+      margin-left: 5px;
+      width: 227px;
+    }
+    .logo {
+      margin-bottom: 20px;
+    }
+  }
+  &__tablet {
+    @media screen and (min-width: 768px) {
+      margin: 0 auto;
+      flex-flow: row;
+      align-items: flex-start;
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+    }
+  }
 }

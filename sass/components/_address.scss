@@ -3,6 +3,8 @@
   font-size: 14px;
   line-height: 1.71;
   color: var(--light-color);
+  display: flex;
+  flex-direction: column;
 
   &__item {
     margin: 4.5px 0;
@@ -15,6 +17,11 @@
   }
   &__list {
     flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+      margin: 0;
+    }
     gap: 0;
     &:last-child {
       margin-bottom: 0;

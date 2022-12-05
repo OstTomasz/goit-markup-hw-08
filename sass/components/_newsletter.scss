@@ -1,13 +1,29 @@
 .newsletter-form {
   display: flex;
-  margin-left: 78px;
+  flex-direction: column;
   position: relative;
+  width: 80%;
+  margin-inline: auto;
+  align-items: center;
+  margin-top: 80px;
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-inline: 0;
+    margin-top: 45px;
+    flex-direction: row;
+  }
 
   &__item {
     display: flex;
-    position: relative;
-    top: 12px;
-    margin: 28px 0 0;
+    max-width: 80%;
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin: 0 12px 0 78px;
+    }
+    margin: 28px 0 20px;
     border: 1px solid #ffffff4d;
     border-radius: 4px;
     align-items: center;
@@ -21,14 +37,22 @@
     }
   }
   &__label {
-    font-weight: 700;
     position: absolute;
-    top: -30px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 210px;
+    font-weight: 700;
     color: var(--light-color);
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--light-color);
+    @media screen and (min-width: 1200px) {
+      top: -32px;
+      left: 78px;
+      transform: translateX(0);
+    }
   }
 
   &__input {
@@ -36,7 +60,7 @@
     border: none;
     outline: none;
     height: 50px;
-    width: 358px;
+    width: 100%;
     padding: 15px 16px;
     color: #ffffff99;
 
