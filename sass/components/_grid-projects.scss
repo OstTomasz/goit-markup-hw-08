@@ -10,6 +10,9 @@
       var(--transition-timing-function);
     overflow: hidden;
     background-color: var(--light-color);
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      width: 310px;
+    }
     @media screen and (min-width: 768px) {
       width: 354px;
     }
@@ -27,6 +30,7 @@
   %photo-card-set {
     width: 470px;
     height: 294px;
+    background-size: cover;
     @media screen and (min-width: 320px) and (max-width: 480px) {
       width: 310px;
       height: 195px;
