@@ -1,18 +1,13 @@
 .join-us {
   flex-direction: column;
-  justify-content: center;
   margin-top: 60px;
   @media screen and (min-width: 768px) {
     margin-top: 0;
-    margin-left: 144px;
   }
   @media screen and (min-width: 1200px) {
-    margin-left: 70px;
+    margin-left: 38px;
+    margin-right: 46px;
     align-items: flex-start;
-  }
-
-  & .social-media {
-    margin: 0;
   }
 }
 .social-media {

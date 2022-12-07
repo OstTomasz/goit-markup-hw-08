@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 80%;
   margin-inline: auto;
   align-items: center;
   margin-top: 80px;
@@ -17,11 +16,10 @@
 
   &__item {
     display: flex;
-    max-width: 80%;
-    width: 100%;
+    width: 450px;
     @media screen and (min-width: 1200px) {
       width: 358px;
-      margin: 0 12px 0 78px;
+      margin: 0 12px 0 0;
     }
     margin: 28px 0 20px;
     border: 1px solid #ffffff4d;
