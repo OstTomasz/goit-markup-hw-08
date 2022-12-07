@@ -1,8 +1,8 @@
 .newsletter-form {
   display: flex;
-  width: 100%;
   flex-direction: column;
   position: relative;
+  width: 100%;
   margin-inline: auto;
   align-items: center;
   margin-top: 80px;
@@ -17,8 +17,8 @@
 
   &__item {
     display: flex;
-    width: 80%;
-    @media screen and (min-width: 768px) {
+    width: calc(100% - 30px);
+    @media screen and (min-width: 480px) {
       width: 450px;
     }
     @media screen and (min-width: 1200px) {
@@ -52,7 +52,7 @@
     color: var(--light-color);
     @media screen and (min-width: 1200px) {
       top: -32px;
-      left: 78px;
+      left: 0;
       transform: translateX(0);
     }
   }

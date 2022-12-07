@@ -24,15 +24,18 @@
   }
   &__tablet {
     @media screen and (min-width: 768px) {
+      align-items: flex-start;
       max-width: 768px;
       margin: 0 auto;
       flex-flow: row;
       gap: 200px;
     }
     @media screen and (min-width: 1200px) {
-      align-items: flex-start;
       gap: 0;
       margin: 0;
     }
+  }
+  .social-media {
+    margin: 20px 0 0;
   }
 }

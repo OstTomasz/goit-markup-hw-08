@@ -1,17 +1,25 @@
 .card-set {
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 480px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 100%;
+  }
 
   &__item {
     position: relative;
     border: 1px solid var(--borderline-color);
-    width: 470px;
+    width: 290px;
     transition: box-shadow var(--transition-duration)
       var(--transition-timing-function);
     overflow: hidden;
     background-color: var(--light-color);
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      width: 310px;
+    @media screen and (min-width: 480px) {
+      width: 450px;
     }
     @media screen and (min-width: 768px) {
       width: 354px;
@@ -28,12 +36,14 @@
     }
   }
   %photo-card-set {
-    width: 470px;
-    height: 294px;
-    background-size: cover;
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-      width: 310px;
-      height: 195px;
+    width: 290px;
+    height: 190px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      height: 294px;
     }
     @media screen and (min-width: 768px) {
       width: 354px;
@@ -50,6 +60,22 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/portfolio1@2x.jpg);
     }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/portfoliomid1.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomid1@2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/portfoliomax1.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomax1@2x.jpg);
+      }
+    }
   }
   &__photo--2 {
     @extend %photo-card-set;
@@ -58,6 +84,22 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/portfolio2@2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/portfoliomid2.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomid2@2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/portfoliomax2.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomax2@2x.jpg);
+      }
     }
   }
   &__photo--3 {
@@ -68,6 +110,22 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/portfolio3@2x.jpg);
     }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/portfoliomid3.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomid3@2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/portfoliomax3.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomax3@2x.jpg);
+      }
+    }
   }
   &__photo--4 {
     @extend %photo-card-set;
@@ -76,6 +134,22 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/portfolio4@2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/portfoliomid4.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomid4@2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/portfoliomax4.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomax4@2x.jpg);
+      }
     }
   }
   &__photo--5 {
@@ -86,6 +160,22 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/portfolio5@2x.jpg);
     }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/portfoliomid5.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomid5@2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/portfoliomax5.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomax5@2x.jpg);
+      }
+    }
   }
   &__photo--6 {
     @extend %photo-card-set;
@@ -94,6 +184,22 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/portfolio6@2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/portfoliomid6.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomid6@2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/portfoliomax6.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomax6@2x.jpg);
+      }
     }
   }
   &__photo--7 {
@@ -104,6 +210,22 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/portfolio7@2x.jpg);
     }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/portfoliomid7.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomid7@2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/portfoliomax7.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomax7@2x.jpg);
+      }
+    }
   }
   &__photo--8 {
     @extend %photo-card-set;
@@ -113,6 +235,22 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/portfolio8@2x.jpg);
     }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/portfoliomid8.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomid8@2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/portfoliomax8.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomax8@2x.jpg);
+      }
+    }
   }
   &__photo--9 {
     @extend %photo-card-set;
@@ -121,6 +259,22 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/portfolio9@2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/portfoliomid9.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomid9@2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/portfoliomax9.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/portfoliomax9@2x.jpg);
+      }
     }
   }
   &__description {
@@ -162,9 +316,13 @@
       var(--transition-timing-function);
   }
   &__overlay-text {
-    font-size: 18px;
-    line-height: 1.55;
     color: var(--light-color);
+    font-size: 14px;
+    line-height: 1.17;
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+      line-height: 1.55;
+    }
   }
 }
 .card-set__item:focus .card-set__overlay,
