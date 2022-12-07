@@ -13,17 +13,23 @@
 }
 
 .modal {
-  width: 450px;
-  height: 609px;
+  width: 94vw;
   background-color: var(--light-color);
   margin: auto;
-  padding: 40px;
+  padding: 40px 10px 10px;
   display: flex;
   flex-direction: column;
   position: relative;
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
     0px 1px 3px 0px #0000001f;
+  @media screen and (min-width: 480px) {
+    padding: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: 609px;
+  }
   @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;

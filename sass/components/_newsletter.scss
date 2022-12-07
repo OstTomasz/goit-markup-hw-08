@@ -1,5 +1,6 @@
 .newsletter-form {
   display: flex;
+  width: 100%;
   flex-direction: column;
   position: relative;
   margin-inline: auto;
@@ -16,7 +17,10 @@
 
   &__item {
     display: flex;
-    width: 450px;
+    width: 80%;
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
     @media screen and (min-width: 1200px) {
       width: 358px;
       margin: 0 12px 0 0;

@@ -1,6 +1,6 @@
 .headline {
   height: 400px;
-  width: 480px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,8 +19,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    height: 400px;
-    width: 768px;
     background-image: linear-gradient(#2f303a66, #2f303a66),
       url(../images/headline-background-mid.jpg);
     @media (min-device-pixel-ratio: 2),
@@ -31,7 +29,6 @@
     }
   }
   @media screen and (min-width: 1200px) {
-    width: 1600px;
     height: 600px;
     background-image: linear-gradient(#2f303a66, #2f303a66),
       url(../images/headline-background-max.jpg);
