@@ -1,14 +1,6 @@
 .footer-subheader {
-  width: 112px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  margin: 0 auto;
   color: var(--light-color);
-  @media screen and (min-width: 768px) {
-    margin-top: 12px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-left: 0;
-  }
 }

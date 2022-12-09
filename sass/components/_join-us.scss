@@ -1,13 +1,16 @@
 .join-us {
-  flex-direction: column;
   margin-top: 60px;
   @media screen and (min-width: 768px) {
     margin-top: 0;
   }
+}
+.footer-subheader {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-top: 13px;
+  }
   @media screen and (min-width: 1200px) {
-    margin-left: 38px;
-    margin-right: 46px;
-    align-items: flex-start;
+    text-align: start;
   }
 }
 .social-media {
